@@ -46,13 +46,13 @@ This portfolio piece targets the Performance Analyst JD by proving competence ac
 
 ## Repository Structure
 ```
-├── data/            # raw CSVs + SQLite DB
+foodpanda-performance-analytics/
+├── data/
+│   ├── raw/         # raw source CSVs
+│   └── cleaned/     # cleaned/processed datasets
 ├── sql/             # schema, KPI queries, root-cause drills
-├── src/
-│   ├── etl/         # data generator + CSV→DB loader
-│   ├── analytics/   # metrics, anomaly detection, root cause
-│   ├── reporting/   # google_sheets.py, wbr_report.py
-│   └── dashboard/   # Streamlit preview
-├── outputs/         # charts, WBR PDF, exports
+├── python/          # ETL, analytics, anomaly detection, Google Sheets push
+├── dashboard/       # Streamlit preview
+├── report/          # charts, WBR PDF, exports
 └── README.md        # case-study writeup
 ```
